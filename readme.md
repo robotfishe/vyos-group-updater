@@ -16,6 +16,6 @@ Then create two text files at /config/scripts/vpn_domains_asn.txt and /config/sc
 
 Finally, create a task scheduler job in your VyOS config to run each .script file regularly. I'd recommend running the ASN script once a week and the DNS script every 15 minutes.
 
-Note that these scripts do not actually apply any routing policies, it just creates the groups. You'll need to do the routing and set up the VPN connection separately.
+Note that these scripts do not actually apply any routing policies, they just create the groups. You'll need to do the routing and set up the VPN connection separately.
 
 Also, BIG IMPORTANT NOTICE that this setup is NOT designed for maximum security, it is designed for maximum ease of use. It does not prevent your DNS searches from leaking to your ISP. It does not prevent your identity from being tracked across sites through browser fingerprinting etc. You will probably get the occasional failure where the script hasn't caught every IP address for a service and you accidentally connect without going through the VPN. 
