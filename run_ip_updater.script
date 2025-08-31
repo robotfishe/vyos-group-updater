@@ -1,8 +1,0 @@
-#!/bin/vbash
-source /opt/vyatta/etc/functions/script-template
-echo Starting VPN routing address update
-configure
-source <(python3 /config/scripts/ip_updater.py)
-commit
-save
-exit
