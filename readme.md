@@ -12,7 +12,7 @@ The other uses DNS results gathered over time to make an educated guess at IP ra
 
 You'll need to download the .py and .script files and place them in /config/scripts.
 
-Then create two text file at /config/scripts/vpn_domains_asn.txt and /config/scripts/vpn_domains_dns.txt. These each contain a list of domains - one per line - you want the script to track. Check manually before you add anything to the ASN list; there are very few websites that actually have their own ASNs.
+Then create two text files at /config/scripts/vpn_domains_asn.txt and /config/scripts/vpn_domains_dns.txt. These each contain a list of domains - one per line - you want the script to track. Check manually before you add anything to the ASN list; there are very few websites that actually have their own ASNs.
 
 Finally, create a task scheduler job in your VyOS config to run each .script file regularly. I'd recommend running the ASN script once a week and the DNS script every 15 minutes.
 
